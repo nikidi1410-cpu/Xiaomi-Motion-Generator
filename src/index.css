@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-xi-orange: #ff6900;
+  --color-xi-obsidian: #0d0f14;
+  --color-xi-white: #ffffff;
+  --color-xi-cyan: #00e5ff;
+  --color-xi-panel: #151922;
+  --color-xi-line: #232835;
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: #07080b;
+  color: #fff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Stage: every child is absolutely positioned by the frame engine */
+.stage {
+  position: relative;
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+  background: #0d0f14;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #fff;
+  contain: strict;
+}
+.stage * {
+  box-sizing: border-box;
+}
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+.abs {
+  position: absolute;
+}
+
+/* Player scrubber */
+input[type='range'].scrub {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+}
+input[type='range'].scrub::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #ff6900;
+  box-shadow: 0 0 0 4px rgba(255, 105, 0, 0.25);
+}

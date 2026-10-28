@@ -1,0 +1,30 @@
+{
+  "name": "xiaomi-motion-generator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Generator video motion graphic vertikal 9:16 (1080x1920 @60fps, 30 detik) - Xiaomi Human x Car x Home",
+  "scripts": {
+    "dev": "vite --port 5173",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 4173",
+    "typecheck": "tsc --noEmit",
+    "qa": "node scripts/qa.mjs",
+    "render": "node scripts/render.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.8",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.0",
+    "ffmpeg-static": "^5.2.0",
+    "puppeteer-core": "^24.10.0",
+    "tailwindcss": "^4.1.8",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  }
+}

@@ -1,0 +1,16 @@
+node_modules
+dist
+out
+qa-out
+*.log
+
+# env files
+.env*
+!.env.example
+
+# vercel
+.vercel
+
+# misc
+.DS_Store
+Thumbs.db
